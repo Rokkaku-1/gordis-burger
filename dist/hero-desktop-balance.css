@@ -1,0 +1,12 @@
+/* Desktop hero: content determines height; photo and caption keep their separation. */
+@media(min-width:1024px){
+ .hero .hero-inner{min-height:clamp(560px,68svh,700px);max-width:1440px;padding:40px 6% 48px;gap:40px}
+ .hero .hero-copy{width:48%;min-width:0}
+ .hero h1{font-size:clamp(76px,6.4vw,96px);line-height:1.04;letter-spacing:0}
+ .hero .hero-description{font-size:20px;line-height:1.5;max-width:440px;margin-top:24px}
+ .hero .hero-art{width:48%;min-width:0;grid-template-rows:40px auto 64px}
+ .hero .hero-burger{width:100%;max-width:560px;transform:rotate(-7deg);filter:drop-shadow(0 16px 18px rgb(76 22 11 /18%))}
+ .hero .burger-caption{font-size:25px;padding-top:24px;position:relative;z-index:3}
+ .hero .round-sticker{top:42px;right:0}
+ .hero .hero-actions a{font-size:16px;min-height:50px}
+}

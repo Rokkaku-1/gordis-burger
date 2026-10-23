@@ -1,0 +1,47 @@
+.closing-footer{background:#a82d0a;color:#fff;padding:40px 6% 20px}
+.footer-columns,.closing-footer .footer-meta{max-width:1268px;margin-inline:auto}
+.footer-columns{display:grid;grid-template-columns:1fr;gap:28px;padding-bottom:28px}
+.footer-brand{display:flex;align-items:center;gap:8px;width:max-content;min-height:64px}.footer-brand img:first-child{width:56px;height:56px;object-fit:contain}.footer-brand img:last-child{width:132px;height:65px;object-fit:contain}
+.footer-columns h2{font:700 14px/1.4 var(--body);letter-spacing:1px;text-transform:uppercase;margin:0 0 12px;color:#f8f6f1}
+.footer-row{display:flex;align-items:flex-start;gap:12px;min-height:44px;font:400 15px/1.6 SourceSansHero,Arial,sans-serif}
+.footer-icon{width:36px;height:36px;border-radius:50%;background:#ffc107;color:#632009;display:grid;place-items:center;flex:none}.footer-icon svg{width:20px;height:20px}
+.footer-columns nav>a{display:inline-flex;align-items:center;min-height:44px;margin-right:20px;font:400 15px/1.5 SourceSansHero,Arial,sans-serif}
+.closing-footer a:hover{color:#ffc107}.closing-footer :focus-visible{outline:3px solid #ffc107;outline-offset:5px}
+.closing-footer .footer-meta{border-top:1px solid #ffffff40;padding:16px 0 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;font:400 13px/1.5 var(--body);color:#f8f6f1}
+.footer-meta>div{display:flex;align-items:center;flex-wrap:wrap;gap:24px}.footer-meta a,.footer-meta #motion-toggle{display:inline-flex;align-items:center;min-height:44px;font:inherit;padding:0;background:none;border:0;color:inherit;text-decoration:underline;text-underline-offset:4px;gap:8px}.footer-meta #motion-toggle[aria-pressed=true]{color:#ffc107}
+@media(min-width:600px){.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}}
+@media(min-width:1024px){.closing-footer{padding-top:40px}.footer-columns{grid-template-columns:.9fr 1.2fr 1.2fr .8fr;gap:32px}.footer-columns nav>a{display:flex;margin:0;min-height:36px}.footer-brand{flex-direction:column;gap:0;align-items:flex-start}.footer-brand img:last-child{margin-left:-8px}}
+@media(max-width:479px){.closing-footer{padding:32px 6% 16px}.footer-columns{gap:24px}.footer-columns h2{font-size:13px}.footer-meta>div{gap:20px}.closing-footer .footer-meta{gap:8px}}
+@media(max-width:359px){.site-header .brand,.site-header.is-scrolled .brand{width:102px}.site-header .brand .brand-mascot,.site-header.is-scrolled .brand .brand-mascot{width:30px;height:30px}.site-header .brand .brand-wordmark,.site-header.is-scrolled .brand .brand-wordmark{width:78px;height:40px}.header-action{font-size:11px;padding:10px 8px}.hero .eyebrow{font-size:12px}}
+
+/* Unified footer brand lockup at every breakpoint. */
+.closing-footer .footer-brand{flex-direction:row;align-items:center;justify-content:flex-start;gap:0;min-height:65px}
+.closing-footer .footer-brand img:first-child{width:48px;height:48px;flex:none}
+.closing-footer .footer-brand img:last-child{width:132px;height:65px;margin-left:-6px;flex:none}
+@media(min-width:1024px){.footer-columns{grid-template-columns:190px minmax(0,1.2fr) minmax(0,1.2fr) minmax(0,.8fr)}}
+
+/* Mobile and tablet: deliberate single-column footer, no crowded 2x2 grid. */
+@media(max-width:1023px){.closing-footer{padding:32px 24px 20px}.footer-columns{grid-template-columns:1fr;gap:24px;padding-bottom:24px}.closing-footer .footer-brand{margin-bottom:4px}.footer-columns>div,.footer-columns>nav{width:100%}.footer-columns h2{margin-bottom:10px}.footer-columns nav{display:flex;flex-wrap:wrap;gap:0 24px}.footer-columns nav h2{width:100%}.footer-columns nav>a{min-height:44px;margin:0}.closing-footer .footer-meta{flex-direction:column;align-items:flex-start;gap:8px;padding-top:16px}.footer-meta>div{justify-content:space-between;width:100%;gap:16px}.footer-meta #motion-toggle,.footer-meta a{font-size:13px;min-height:44px}}
+@media(max-width:479px){.closing-footer{padding-inline:20px}.footer-columns{gap:22px}}
+
+/* Mobile composition: centered brand, compact contact stack, centered utilities. */
+@media(max-width:1023px){.closing-footer{padding:28px 24px 20px;text-align:center}.footer-columns{max-width:440px;justify-items:center;gap:20px;padding-bottom:20px}.closing-footer .footer-brand{justify-content:center;margin:0 auto 4px}.footer-columns h2{margin-bottom:8px;font-size:13px;letter-spacing:1.2px}.footer-row{justify-content:center;align-items:center;gap:10px}.footer-row>span:last-child{text-align:left}.footer-columns nav{justify-content:center;gap:0 20px}.closing-footer .footer-meta{max-width:440px;align-items:center;justify-content:center;gap:4px;padding-top:12px}.footer-meta>div{width:auto;justify-content:center;gap:24px}.footer-meta a,.footer-meta #motion-toggle{font-size:13px}.footer-columns nav>a{min-height:44px}}
+/* Compact mobile footer inspired by a utility bar; desktop stays unchanged. */
+@media(max-width:767px){
+ .closing-footer{display:grid;grid-template-columns:1fr;padding:0 20px 16px;gap:0;text-align:center}
+ .closing-footer .footer-columns{grid-row:2;width:100%;max-width:440px;grid-template-columns:1fr 1fr;gap:12px 16px;padding:12px 0 8px}
+ .closing-footer .footer-brand{grid-column:1/-1;min-height:50px;margin:0}
+ .closing-footer .footer-brand img:first-child{width:40px;height:40px}
+ .closing-footer .footer-brand img:last-child{width:112px;height:55px}
+ .footer-columns h2{display:none}
+ .footer-row{flex-direction:column;gap:4px;font-size:14px;line-height:1.45}
+ .footer-row>span:last-child{text-align:center}
+ .footer-icon{width:36px;height:36px}
+ .footer-columns nav{grid-column:1/-1;gap:0;align-items:center;border-top:1px solid #ffffff40;padding-top:8px}
+ .footer-columns nav>a{font-size:14px;padding-inline:12px;position:relative}
+ .footer-columns nav>a+a::before{content:"";position:absolute;left:0;height:14px;border-left:1px solid #ffffff70}
+ .closing-footer .footer-meta,.footer-meta>div{display:contents}
+ .footer-meta>span{grid-row:3;font-size:13px;line-height:24px}
+ .footer-meta #motion-toggle{grid-row:4;justify-self:center;min-height:44px;font-size:13px}
+ .footer-meta a{grid-row:1;justify-self:stretch;justify-content:flex-end;border-bottom:1px solid #ffffff40;min-height:44px;font-size:13px;text-decoration:none}
+}

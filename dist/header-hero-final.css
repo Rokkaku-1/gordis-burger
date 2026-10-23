@@ -1,0 +1,24 @@
+.site-header{background:#f8f6f1}.desktop-nav a{font-weight:600;color:#ad2d0d;transition:color 200ms}.desktop-nav a:hover{color:#8f250b}.desktop-nav a::after{transition:right 200ms}
+.desktop-nav a+a::before{content:'|';position:absolute;left:-26px;color:rgb(232 76 31 /30%);font-weight:400;pointer-events:none}
+.header-action{border:2px solid #e84c1f;border-radius:6px;padding:10px 16px;color:#ad2d0d;transition:transform 200ms,background 200ms,color 200ms}
+.header-action:hover{background:#b52b13;color:white;transform:translateY(-2px)}
+.hero::before{translate:0 var(--background-shift,0px)}.hero .tiny-star{animation:retro-turn 8s linear infinite}.hero-spark:hover,.hero .tiny-star:hover{animation-play-state:paused}
+.hero.play-intro .hero-copy>.eyebrow{animation:hero-text-enter 400ms ease both}.hero.play-intro .hero-line{animation-timing-function:cubic-bezier(.34,1.56,.64,1)}
+.hero.play-intro .hero-description{animation:hero-fade-enter 400ms ease 200ms both}.hero.play-intro .hero-actions{animation-delay:300ms}
+.hero.play-intro .hand-note{animation:hero-fade-enter 400ms ease 400ms both}.hero.play-intro .burger-caption{animation:hero-fade-enter 400ms ease 500ms both}
+.hero .round-sticker:hover{transform:rotate(12deg) scale(1.08);filter:drop-shadow(0 4px 12px rgb(255 193 7 /40%))}
+.hero-actions .cream{border:2px solid #e84c1f}.hero-actions a:hover{transform:translateY(-3px);filter:drop-shadow(0 8px 12px rgb(232 76 31 /25%))}
+.hero-location{justify-content:center}
+.menu-overlay{position:fixed;inset:0;z-index:29;border:0;background:#2c2c2a66;animation:hero-fade-enter 200ms ease both}
+.mobile-nav{background:linear-gradient(#f8f6f1,#fff);max-height:calc(100dvh - 110px);overflow:auto;padding:16px 5%;animation:menu-enter 300ms ease-out both}
+.mobile-nav.nav-closing{animation:menu-exit 200ms ease-in both;pointer-events:none}.mobile-nav a{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:600;padding:14px 16px;color:#ad2d0d;border-bottom:1px solid rgb(232 76 31 /20%);animation:menu-link-enter 300ms ease both;transition:background 200ms,translate 200ms}
+.mobile-nav a:nth-child(2){animation-delay:50ms}.mobile-nav a:nth-child(3){animation-delay:100ms}.mobile-nav a:nth-child(4){animation-delay:150ms;background:#f9e8ed}.mobile-nav a:hover{background:#e84c1f1a;translate:4px 0}
+.mobile-nav svg{flex:none;width:22px;height:22px}.mobile-info{padding:16px;font-size:14px;color:#66564d;line-height:1.7}.mobile-nav .mobile-order{background:#b52b13;color:white;border-radius:6px;justify-content:center;animation-delay:200ms}
+.menu-toggle span{transition:transform 300ms ease}.menu-toggle{color:#ad2d0d}
+@keyframes menu-enter{from{opacity:0;translate:0 -16px}to{opacity:1;translate:0 0}}@keyframes menu-exit{to{opacity:0;translate:0 -16px}}@keyframes menu-link-enter{from{opacity:0;translate:-8px 0}to{opacity:1;translate:0 0}}
+@media(min-width:1024px){.hero-inner{min-height:100svh}.hero h1{font-size:64px}.hero .hand-note{font-size:24px}.menu-overlay{display:none}}
+@media(max-width:1023px){.desktop-nav{display:none}.site-header,.site-header.is-scrolled{min-height:90px;padding:20px 5%;gap:8px}.menu-toggle{display:flex;flex-direction:column;gap:5px;align-items:center;justify-content:center;background:transparent;border:0;width:44px;height:44px}.menu-toggle span{width:21px;height:2px;background:currentColor}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}.header-action{margin-left:auto}.mobile-nav{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column}}
+@media(max-width:767px){.header-action{padding:10px;gap:7px}.hero h1{font-size:40px}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions a{width:100%}.hero-burger{width:85%}.hero-description{max-width:360px}.hero .burger-caption{font-size:24px}}
+@media(max-width:479px){.hero-inner{padding:24px 12px;gap:24px}.hero h1{font-size:40px}.hero-burger{width:90%}.hero-spark{animation:none}.hero .eyebrow{font-size:13px;letter-spacing:0}.hero-art{grid-template-rows:48px auto 48px}.hero .round-sticker{--badge:96px}}
+.motion-off .hero .tiny-star{animation:none!important}.motion-off .hero::before{translate:none}
+@media(prefers-reduced-motion:reduce){.hero .tiny-star,.mobile-nav,.mobile-nav a,.menu-overlay{animation:none!important}.hero::before{translate:none}.mobile-nav a{transition:none}}

@@ -1,0 +1,93 @@
+{
+  "beforeBytes": 7857489,
+  "afterBytes": 1986238,
+  "stylesheetsBefore": 12,
+  "stylesheetsAfter": 1,
+  "products": [
+    {
+      "image": "Alfredo_Gordis_Burger_doble-web.jpg",
+      "before": 150662,
+      "after800": 23498
+    },
+    {
+      "image": "Big_Chicken_Sandwich-web.jpg",
+      "before": 193743,
+      "after800": 33234
+    },
+    {
+      "image": "GORDIS-020-web.jpg",
+      "before": 129857,
+      "after800": 18748
+    },
+    {
+      "image": "Gordis_Bacon_doble-web.jpg",
+      "before": 216057,
+      "after800": 36744
+    },
+    {
+      "image": "Gordis_Tasty_simple-web.jpg",
+      "before": 190459,
+      "after800": 30606
+    },
+    {
+      "image": "Papas_fritas_sazonadas-web.jpg",
+      "before": 195298,
+      "after800": 62008
+    },
+    {
+      "image": "Steak_Gordis_burger_doble-web.jpg",
+      "before": 188552,
+      "after800": 31460
+    },
+    {
+      "image": "ensalada1-web.jpg",
+      "before": 170876,
+      "after800": 28950
+    },
+    {
+      "image": "ensalada2-web.jpg",
+      "before": 185703,
+      "after800": 31862
+    },
+    {
+      "image": "postre-web.jpg",
+      "before": 94182,
+      "after800": 25068
+    }
+  ],
+  "movedUnusedAssets": [
+    "Alfredo_Gordis_Burger_doble-web.jpg",
+    "Big_Chicken_Sandwich-web.jpg",
+    "ensalada1-web.jpg",
+    "ensalada2-web.jpg",
+    "fontspring-demo-dreamboat-semibold.otf",
+    "GORDIS-020-web.jpg",
+    "GORDIS-032-Editar-web.jpg",
+    "GORDIS-058-Editar-web.jpg",
+    "GORDIS-109-web.jpg",
+    "Gordis_Bacon_doble-web.jpg",
+    "Gordis_clasica_triple-web.jpg",
+    "Gordis_Tasty_simple-web.jpg",
+    "Gordis_Tasty_triple-web.jpg",
+    "hamb1.png",
+    "hamb2.png",
+    "hamb3.png",
+    "hamb4.png",
+    "hamb5.png",
+    "Lobster-Regular.ttf",
+    "logofooter.png",
+    "papas.png",
+    "Papas_fritas_sazonadas-web.jpg",
+    "postre-web.jpg",
+    "Steak_Gordis_burger_doble-web.jpg",
+    "visuals1-01.png"
+  ],
+  "fontBefore": 406076,
+  "fontAfter": 48020,
+  "heroBefore": 527174,
+  "heroAfter": 314142,
+  "heroMobileBefore": 73784,
+  "heroMobileAfter": 53490,
+  "reductionPercent": 74.7,
+  "productReductionPercent": 81.2
+}

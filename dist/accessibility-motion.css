@@ -1,0 +1,127 @@
+/* Contrast, readable Latin typography, and one-time choreography. */
+:root { --red:#cf1e18; --deep-red:#a8190f; --secondary:#6b5748; }
+.header-action { color:var(--deep-red); animation:none; white-space:nowrap; }
+.eyebrow,.announcement,.details-heading .eyebrow,.dialog-copy .eyebrow,
+.story-poster>p,.story-poster>span:not(.poster-star),.footer-top>div>p,
+.footer-bottom,.motion-toggle,.product-bottom>span,.menu-bottom>span { font-size:12px; }
+.product-badge { font-size:11px; }
+.story-poster>p { color:var(--ink); }
+.story-copy .text-link:hover { color:var(--ink); }
+.local-copy em { color:var(--deep-red); }
+.hero::before { opacity:.035; }
+.hero-art { display:grid; grid-template-rows:90px auto 70px; align-content:center; min-height:510px; }
+.hero-art::before { inset:20% 0 15%; }
+.hero-burger { grid-row:2; width:94%; max-width:580px; margin:0 auto; animation:none; }
+.hand-note { top:0; left:0; right:auto; bottom:auto; font-size:28px; transform:rotate(-8deg); white-space:nowrap; }
+.burger-caption { position:relative; grid-row:3; left:auto; bottom:auto; text-align:center; font-size:14px; padding-top:52px; letter-spacing:1px; background:var(--red); z-index:3; }
+.round-sticker { top:90px; right:0; }
+.spark-one { top:2px; left:-35px; font-size:30px; }
+.spark-two { bottom:5px; right:-20px; font-size:26px; }
+.hero-line { display:block; }
+.hero h1 .hero-line { font-size:1em; }
+.hero h1 .hero-line:last-child { font-size:1.14em; }
+.hero.play-intro .hero-copy>.eyebrow { animation:slide-up 350ms ease both; }
+.hero.play-intro .hero-line { animation:slide-up 430ms ease both; animation-delay:80ms; }
+.hero.play-intro .hero-line:last-child { animation-delay:160ms; }
+.hero.play-intro .hero-description { animation:slide-up 350ms ease 240ms both; }
+.hero.play-intro .hero-actions,.hero.play-intro .hero-signature { animation:slide-up 350ms ease 320ms both; }
+.hero.play-intro .hero-burger { animation:burger-drop 450ms var(--spring) 400ms both; }
+.hero.play-intro .round-sticker { animation:sticker-stamp 240ms var(--spring) 660ms both; }
+.hero-spark { rotate:0deg; animation:star-blink 3s ease-in-out infinite; }
+.spark-two { animation-delay:1.5s; }
+.ribbon-track { display:flex; width:max-content; text-align:left!important; animation:ribbon-slide 30s linear infinite; }
+.ribbon-copy { flex:none; white-space:nowrap; }
+.brand-ribbon:hover .ribbon-track,.brand-ribbon:not(.is-in-view) .ribbon-track,
+body.is-hidden .ribbon-track { animation-play-state:paused; }
+.site-header { transition:height 250ms,box-shadow 250ms; }
+.brand,.brand img { transition:width 250ms; }
+.site-header.is-scrolled { height:72px; box-shadow:0 4px 12px #38251b14; }
+.site-header.is-scrolled .brand,.site-header.is-scrolled .brand img { width:108px; }
+.announcement { transition:min-height 250ms,padding 250ms; }
+body.has-scrolled .announcement { min-height:24px; padding-top:2px; padding-bottom:2px; }
+.button.cream:active,.button.red:active { transform:translate(3px,4px); box-shadow:0 0 0 var(--deep-red); transition-duration:100ms; }
+.product-image { background:#fbe7a1; }
+.product-image>img { mix-blend-mode:multiply; transform:scale(var(--zoom,1)); }
+.product-card:hover .product-image>img,.product-card:focus-within .product-image>img { transform:scale(calc(var(--zoom,1)*1.02)); }
+.detail-icon svg { width:34px; height:34px; fill:var(--yellow); stroke:var(--deep-red); stroke-width:2; }
+.detail-icon .icon-line { fill:none; }
+.detail-item.reveal.is-visible .detail-icon { animation:icon-pop 450ms var(--spring) both; animation-delay:var(--reveal-delay,0ms); }
+.story-poster.reveal { transform:rotate(0deg); }
+.story-poster.reveal.is-visible { animation:poster-settle 600ms var(--spring) both; }
+.story-poster.reveal.is-visible>img { animation:mascot-wiggle 600ms ease-out; }
+.map-label.reveal.is-visible { animation:slide-up 500ms var(--spring) both; }
+.footer-mascot.reveal.is-visible { animation:mascot-arrive 500ms var(--spring) backwards; }
+dialog.dialog-opening { animation:dialog-in 200ms ease-out both; }
+dialog.dialog-opening::backdrop { animation:backdrop-in 200ms ease both; }
+dialog.dialog-closing { animation:dialog-out 200ms ease-in both; }
+dialog.dialog-closing::backdrop { animation:backdrop-out 200ms ease both; }
+@keyframes slide-up { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+@keyframes burger-drop { from { opacity:0; translate:0 -35px; } to { opacity:1; translate:0 0; } }
+@keyframes sticker-stamp { from { opacity:0; transform:scale(1.4) rotate(-12deg); } to { opacity:1; transform:scale(1) rotate(12deg); } }
+@keyframes star-blink { 0%,100% { opacity:.6; scale:1; } 50% { opacity:.9; scale:1.1; } }
+@keyframes ribbon-slide { to { transform:translateX(-50%); } }
+@keyframes icon-pop { from { opacity:0; transform:scale(.6); } to { opacity:1; transform:scale(1); } }
+@keyframes poster-settle { from { transform:rotate(0deg); } to { transform:rotate(-3deg); } }
+@keyframes mascot-wiggle { 0%,100% { transform:rotate(0); } 30% { transform:rotate(-7deg); } 65% { transform:rotate(5deg); } }
+@keyframes mascot-arrive { from { opacity:0; transform:translateY(18px) rotate(12deg); } to { opacity:1; transform:translateY(0) rotate(12deg); } }
+@keyframes dialog-in { from { opacity:0; transform:translateY(8px) scale(.96); } to { opacity:1; transform:none; } }
+@keyframes dialog-out { to { opacity:0; transform:translateY(8px) scale(.96); } }
+@keyframes backdrop-in { from { opacity:0; } to { opacity:1; } }
+@keyframes backdrop-out { to { opacity:0; } }
+@media (min-width:761px) and (max-width:1100px) {
+  .site-header { gap:16px; padding-left:4%; padding-right:4%; }
+  .desktop-nav { gap:20px; font-size:13px; white-space:nowrap; }
+  .hero-inner { grid-template-columns:1fr 1fr; gap:20px; }
+  .hero h1 { font-size:clamp(48px,6vw,66px); }
+  .hero-art { min-height:420px; }
+  .hero-burger { width:90%; }
+  .hand-note { font-size:25px; }
+  .round-sticker { width:90px; height:90px; right:-8px; top:103px; }
+  .hero-actions { flex-wrap:wrap; gap:12px; }
+  .hero-signature { margin-top:20px; }
+  .spark-one { left:-16px; top:-25px; }
+  .little-things { grid-template-columns:1fr 1fr; row-gap:32px; }
+  .detail-icon { width:52px; height:52px; }
+}
+@media (min-width:761px) and (max-width:900px) {
+  .brand,.brand img { width:108px; }
+  .header-action { padding:11px 15px; gap:14px; font-size:13px; }
+}
+@media (max-width:760px) {
+  .announcement { font-size:12px; letter-spacing:.8px; }
+  .hero-inner { padding:24px 6% 28px; }
+  .hero .eyebrow { font-size:12px; letter-spacing:.9px; margin-bottom:12px; }
+  .hero h1 { font-size:clamp(48px,12.5vw,68px); }
+  .hero-description { margin-top:14px; font-size:15px; }
+  .hero-actions { margin-top:16px; gap:18px; }
+  .hero-location { font-size:12px; }
+  .hero-signature { margin-top:14px; }
+  .hero-art { margin-top:20px; min-height:0; grid-template-rows:65px auto 65px; }
+  .hero-burger { width:82%; max-width:350px; margin:0 auto; }
+  .hand-note { top:-3px; left:0; font-size:24px; }
+  .burger-caption { padding-top:36px; font-size:12px; }
+  .round-sticker { top:68px; right:0; width:78px; height:78px; }
+  .round-sticker span { font-size:12px; letter-spacing:1px; }
+  .round-sticker strong { font-size:16px; }
+  .spark-one { left:auto; right:5px; top:0; font-size:24px; }
+  .spark-two { right:auto; left:0; bottom:35px; font-size:24px; }
+  .hero-art::before { inset:20% 0 18%; }
+  .header-action { font-size:12px; }
+  .mobile-nav { top:100%; }
+  .site-header.is-scrolled { height:68px; }
+  .site-header.is-scrolled .brand,.site-header.is-scrolled .brand img { width:100px; }
+  .product-badge { font-size:11px; letter-spacing:.6px; }
+  .detail-icon { width:52px; height:52px; }
+  .product-bottom>span,.footer-bottom { font-size:12px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .story-poster.reveal.is-visible { transform:rotate(-3deg); }
+  .hero-line,.hero-burger,.round-sticker { opacity:1; translate:none; }
+}
+.motion-off .story-poster.reveal.is-visible { transform:rotate(-3deg); }
+@media(max-width:400px) {
+  .site-header { gap:10px; }
+  .brand,.brand img { width:96px; }
+  .header-action { padding:9px 11px; gap:8px; }
+  .hero .eyebrow { letter-spacing:.5px; }
+}
